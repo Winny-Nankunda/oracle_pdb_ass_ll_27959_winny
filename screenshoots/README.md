@@ -1,5 +1,6 @@
-Oracle Pluggable Database Assignment II
-Student Information
+# <span style="color:#1F77B4">Oracle Pluggable Database Assignment II</span>
+
+## <span style="color:#FF7F0E">Student Information</span>
 
 Name: Winny Nakunda
 
@@ -7,31 +8,39 @@ Student ID: 27959
 
 Course: Database Development with PL/SQL (INSY 8311)
 
-Project Overview
+---
 
-This assignment focuses on the practical management of Pluggable Databases (PDBs) in Oracle Database 21c.
+### <span style="color:#2CA02C">Tasks Completed:</span>
+1. Creating a PDB
+2. Switching between containers
+3. Managing users inside a PDB
+4. Opening and dropping a PDB
+5. Basic database monitoring
 
-The objective was to demonstrate the ability to create, manage, verify, and remove PDBs inside a Container Database (CDB). All operations were performed using SQL*Plus in a Windows environment.
+---
 
-The work shows full understanding of:
 
-Creating a PDB
 
-Switching between containers
 
-Managing users inside a PDB
 
-Opening and dropping a PDB
 
-Basic database monitoring
 
-Oracle Environment
-Component	Details
-Oracle Version	Oracle 21c
-Operating System	Windows 10
-Container Database	ORCL21
-Datafile Location	C:\oracle21c\oradata\ORCL21
-Tasks Performed
+
+## <span style="color:#D62728">Oracle Environment</span>
+
+| Property | Details |
+|----------|---------|
+| **Oracle Version** | Oracle 21c |
+| **Operating System** | Windows 10 |
+| **Container Database** | ORCL21 |
+| **Storage Location** | C:\oracle21c\oradata\ORCL21 |
+
+---
+
+## <span style="color:#9467BD">Task Explanations</span>
+
+### <span style="color:#1F77B4">Task 1: PDB Creation</span>
+
 1. Creation of a New PDB
 
 A new pluggable database named wi_pdb_27959 was created inside the root container.
