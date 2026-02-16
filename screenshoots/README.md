@@ -78,7 +78,7 @@ WHERE username = 'WINNY_PLSQLAUCA_27959';
 
 
 The result verified that the user exists and has been properly configured inside the PDB.
-![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+![Task 1 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/3.%20check_user_existance.PNG)
 
 4. Creating a Temporary PDB for Testing
 
