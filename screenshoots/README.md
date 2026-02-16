@@ -101,7 +101,7 @@ This showed that I can work from the root container and manage multiple PDBs.
 ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 OPEN;
 SHOW PDBS;
 
-![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+![Task 1 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/5.%20prove_temp_db_created.PNG)
 
 The output displayed all available PDBs, confirming successful creation and activation.
 
