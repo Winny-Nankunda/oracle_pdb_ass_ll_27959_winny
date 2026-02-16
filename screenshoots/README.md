@@ -95,7 +95,7 @@ FILE_NAME_CONVERT = (
 
 
 This showed that I can work from the root container and manage multiple PDBs.
-![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+![Task 1 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/4.%20temp_db_created.PNG)
  
 5. Opening and Verifying the Temporary PDB
 ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 OPEN;
