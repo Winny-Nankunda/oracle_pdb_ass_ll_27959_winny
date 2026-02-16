@@ -105,7 +105,7 @@ SHOW PDBS;
 
 The output displayed all available PDBs, confirming successful creation and activation.
 
-6. Dropping the Temporary PDB
+### <span style="color:#1F77B4">Task 6: Drop Temporary PDB</span>
 
 After verification, I removed the temporary PDB including its datafiles.
 
