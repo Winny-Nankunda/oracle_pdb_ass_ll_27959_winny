@@ -55,6 +55,7 @@ FILE_NAME_CONVERT = (
 
 This step confirmed my understanding of how Oracle clones the seed database to generate a new PDB.
 
+
 2. Switching to the Created PDB
 
 After creating the PDB, I changed the session container and confirmed the active database.
