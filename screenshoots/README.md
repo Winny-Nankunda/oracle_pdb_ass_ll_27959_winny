@@ -124,7 +124,7 @@ This step demonstrates proper cleanup and database resource management.
 
 Demonstrates access to Oracle Enterprise Manager console for centralized database administration and monitoring.
 
-![Task 7 Screenshot](./screenshoots/final_img.PNG)
+![Task 7 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/7.%20oem.PNG)
 
 ---
 Student Name: Winny Nakunda
