@@ -1,1 +1,154 @@
+Oracle Pluggable Database Assignment II
+Student Information
 
+Name: Winny Nakunda
+
+Student ID: 27959
+
+Course: Database Development with PL/SQL (INSY 8311)
+
+Project Overview
+
+This assignment focuses on the practical management of Pluggable Databases (PDBs) in Oracle Database 21c.
+
+The objective was to demonstrate the ability to create, manage, verify, and remove PDBs inside a Container Database (CDB). All operations were performed using SQL*Plus in a Windows environment.
+
+The work shows full understanding of:
+
+Creating a PDB
+
+Switching between containers
+
+Managing users inside a PDB
+
+Opening and dropping a PDB
+
+Basic database monitoring
+
+Oracle Environment
+Component	Details
+Oracle Version	Oracle 21c
+Operating System	Windows 10
+Container Database	ORCL21
+Datafile Location	C:\oracle21c\oradata\ORCL21
+Tasks Performed
+1. Creation of a New PDB
+
+A new pluggable database named wi_pdb_27959 was created inside the root container.
+An administrative user was defined during the creation process.
+
+CREATE PLUGGABLE DATABASE wi_pdb_27959
+ADMIN USER winny_plsqlauca_27959 IDENTIFIED BY Nankunda12@
+FILE_NAME_CONVERT = (
+'C:\oracle21c\oradata\ORCL21\pdbseed',
+'C:\oracle21c\oradata\ORCL21\wi_pdb_27959');
+
+
+This step confirmed my understanding of how Oracle clones the seed database to generate a new PDB.
+
+2. Switching to the Created PDB
+
+After creating the PDB, I changed the session container and confirmed the active database.
+
+ALTER SESSION SET CONTAINER = wi_pdb_27959;
+SHOW CON_NAME;
+
+
+This ensured that all next operations were executed inside the correct pluggable database.
+
+3. Verifying the Admin User
+
+To confirm that the administrative user was successfully created, I queried the DBA_USERS table.
+
+SELECT username 
+FROM dba_users
+WHERE username = 'WINNY_PLSQLAUCA_27959';
+
+
+The result verified that the user exists and has been properly configured inside the PDB.
+
+4. Creating a Temporary PDB for Testing
+
+To demonstrate full lifecycle management, I created another PDB intended for testing and deletion.
+
+ALTER SESSION SET CONTAINER = CDB$ROOT;
+
+CREATE PLUGGABLE DATABASE wi_temp_pdb_27959
+ADMIN USER tempadmin IDENTIFIED BY Temp123@
+FILE_NAME_CONVERT = (
+'C:\oracle21c\oradata\ORCL21\pdbseed',
+'C:\oracle21c\oradata\ORCL21\wi_temp_pdb_27959');
+
+
+This showed that I can work from the root container and manage multiple PDBs.
+
+5. Opening and Verifying the Temporary PDB
+ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 OPEN;
+SHOW PDBS;
+
+
+The output displayed all available PDBs, confirming successful creation and activation.
+
+6. Dropping the Temporary PDB
+
+After verification, I removed the temporary PDB including its datafiles.
+
+ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 CLOSE IMMEDIATE;
+
+DROP PLUGGABLE DATABASE wi_temp_pdb_27959 INCLUDING DATAFILES;
+
+SHOW PDBS;
+
+
+This step demonstrates proper cleanup and database resource management.
+
+7. Database Monitoring
+
+I accessed Oracle Enterprise Manager to observe database status and confirm that the environment was functioning correctly.
+
+Challenges Encountered
+
+During the setup process, I initially experienced connection errors caused by an incorrect container session and misconfigured file paths.
+
+To resolve the issue:
+
+I reconnected as SYSDBA.
+
+Verified that the root container was active before creating the PDB.
+
+Carefully corrected the FILE_NAME_CONVERT path format.
+
+Restarted the Oracle service when necessary.
+
+After resolving these issues, all tasks executed successfully.
+
+Key Learning Outcomes
+
+Through this assignment, I gained practical experience in:
+
+Managing multi-tenant architecture in Oracle
+
+Understanding the difference between CDB and PDB
+
+User verification inside a pluggable database
+
+Safe deletion of database objects
+
+Basic administrative troubleshooting
+
+This practical experience strengthened my confidence in handling Oracle database environments.
+
+Resources Used
+
+Course lecture notes
+
+Official Oracle documentation
+
+Instructor guidance
+
+Declaration
+
+I confirm that this work was completed independently. All SQL commands were executed by me in my local Oracle environment, and all screenshots submitted reflect my own work.
+
+Student Name: Winny Nakunda
+Date: February 2026
