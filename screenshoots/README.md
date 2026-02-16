@@ -114,6 +114,8 @@ ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 CLOSE IMMEDIATE;
 DROP PLUGGABLE DATABASE wi_temp_pdb_27959 INCLUDING DATAFILES;
 
 SHOW PDBS;
+
+
 ![Task 1 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/6.%20temp_pdb_deleted.PNG)
 
 This step demonstrates proper cleanup and database resource management.
