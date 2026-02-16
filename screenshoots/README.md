@@ -66,7 +66,7 @@ SHOW CON_NAME;
 
 This ensured that all next operations were executed inside the correct pluggable database.
 
-![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+![Task 1 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/2.%20db_created.PNG)
 
 3. Verifying the Admin User
 
