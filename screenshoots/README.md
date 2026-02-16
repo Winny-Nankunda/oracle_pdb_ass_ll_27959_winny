@@ -120,53 +120,12 @@ SHOW PDBS;
 
 This step demonstrates proper cleanup and database resource management.
 
-7. Database Monitoring
+### <span style="color:#1F77B4">Task 7: Oracle Enterprise Manager (OEM)</span>
 
-I accessed Oracle Enterprise Manager to observe database status and confirm that the environment was functioning correctly.
+Demonstrates access to Oracle Enterprise Manager console for centralized database administration and monitoring.
 
-Challenges Encountered
+![Task 7 Screenshot](./screenshoots/final_img.PNG)
 
-During the setup process, I initially experienced connection errors caused by an incorrect container session and misconfigured file paths.
-
-To resolve the issue:
-
-I reconnected as SYSDBA.
-
-Verified that the root container was active before creating the PDB.
-
-Carefully corrected the FILE_NAME_CONVERT path format.
-
-Restarted the Oracle service when necessary.
-
-After resolving these issues, all tasks executed successfully.
-
-Key Learning Outcomes
-
-Through this assignment, I gained practical experience in:
-
-Managing multi-tenant architecture in Oracle
-
-Understanding the difference between CDB and PDB
-
-User verification inside a pluggable database
-
-Safe deletion of database objects
-
-Basic administrative troubleshooting
-
-This practical experience strengthened my confidence in handling Oracle database environments.
-
-Resources Used
-
-Course lecture notes
-
-Official Oracle documentation
-
-Instructor guidance
-
-Declaration
-
-I confirm that this work was completed independently. All SQL commands were executed by me in my local Oracle environment, and all screenshots submitted reflect my own work.
-
+---
 Student Name: Winny Nakunda
 Date: February 2026
