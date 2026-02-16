@@ -54,7 +54,7 @@ FILE_NAME_CONVERT = (
 
 
 This step confirmed my understanding of how Oracle clones the seed database to generate a new PDB.
-
+![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
 
 2. Switching to the Created PDB
 
@@ -66,6 +66,8 @@ SHOW CON_NAME;
 
 This ensured that all next operations were executed inside the correct pluggable database.
 
+![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+
 3. Verifying the Admin User
 
 To confirm that the administrative user was successfully created, I queried the DBA_USERS table.
@@ -76,6 +78,7 @@ WHERE username = 'WINNY_PLSQLAUCA_27959';
 
 
 The result verified that the user exists and has been properly configured inside the PDB.
+![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
 
 4. Creating a Temporary PDB for Testing
 
@@ -83,19 +86,21 @@ To demonstrate full lifecycle management, I created another PDB intended for tes
 
 ALTER SESSION SET CONTAINER = CDB$ROOT;
 
-CREATE PLUGGABLE DATABASE wi_temp_pdb_27959
+CREATE PLUGGABLE DATABASE wi_to_delete_pdb_27959
 ADMIN USER tempadmin IDENTIFIED BY Temp123@
 FILE_NAME_CONVERT = (
 'C:\oracle21c\oradata\ORCL21\pdbseed',
-'C:\oracle21c\oradata\ORCL21\wi_temp_pdb_27959');
+'C:\oracle21c\oradata\ORCL21\wi_to_delete_pdb_27959');
 
 
 This showed that I can work from the root container and manage multiple PDBs.
-
+![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+ 
 5. Opening and Verifying the Temporary PDB
 ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 OPEN;
 SHOW PDBS;
 
+![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
 
 The output displayed all available PDBs, confirming successful creation and activation.
 
@@ -108,7 +113,7 @@ ALTER PLUGGABLE DATABASE wi_temp_pdb_27959 CLOSE IMMEDIATE;
 DROP PLUGGABLE DATABASE wi_temp_pdb_27959 INCLUDING DATAFILES;
 
 SHOW PDBS;
-
+![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
 
 This step demonstrates proper cleanup and database resource management.
 
