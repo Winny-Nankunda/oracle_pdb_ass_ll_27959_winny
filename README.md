@@ -127,5 +127,18 @@ Demonstrates access to Oracle Enterprise Manager console for centralized databas
 ![Task 7 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/7.%20oem.PNG)
 
 ---
-Student Name: Winny Nakunda
-Date: February 2026
+
+## <span style="color:#17BECF">Final Checklist (Apply Before Submission)</span>
+
+- [x] Correct PDB names used
+- [x] User created inside the PDB
+- [x] Temporary PDB created and deleted
+- [x] OEM dashboard screenshot included
+- [x] GitHub repository is PUBLIC
+- [x] README is clear and professional
+- [x] Deadline respected
+
+---
+
+*End of Report*
+
