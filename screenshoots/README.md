@@ -54,7 +54,7 @@ FILE_NAME_CONVERT = (
 
 
 This step confirmed my understanding of how Oracle clones the seed database to generate a new PDB.
-![Task 1 Screenshot](./screenshoots/create_pdb_success.PNG)
+![Task 1 Screenshot](https://github.com/Winny-Nankunda/oracle_pdb_ass_ll_27959_winny/blob/main/screenshoots/1.%20db_created.PNG)
 
 2. Switching to the Created PDB
 
